@@ -85,7 +85,7 @@ server <- function(input, output, session) {
             numericInput(
                 inputId = paste0("input_value_", i),
                 label = "Insert Value",
-                value = 3,
+                value = ceiling(runif(n = 1, min = 1, max = 10)),
                 min = 1,
                 max = 10,
                 step = 1
